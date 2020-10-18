@@ -136,8 +136,9 @@ GameObject:
   - component: {fileID: 8145432}
   - component: {fileID: 8145431}
   - component: {fileID: 8145430}
+  - component: {fileID: 8145435}
   m_Layer: 0
-  m_Name: knight (1)
+  m_Name: Knight1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,12 +262,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8145429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.21, y: 13.15, z: 0}
+  m_LocalPosition: {x: 5.37, y: 13.15, z: 0}
   m_LocalScale: {x: 0.7232849, y: 0.6879085, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8145435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8145429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33f767c1548d674c875b233a3bc9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knight1: {fileID: 0}
+  knightwalk: {fileID: 0}
 --- !u!1 &478138502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170516855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.12, y: -2.39, z: 0}
+  m_LocalPosition: {x: 8.04, y: -2.39, z: 0}
   m_LocalScale: {x: 0.65, y: 0.7125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
