@@ -5,8 +5,8 @@ using UnityEngine;
 public class Animation : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
-    public Sprite knight1;
-    public Sprite knightwalk;
+    public Sprite Knight1;
+    public Sprite Knightwalk;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,13 @@ public class Animation : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             spriteRenderer = GetComponent<SpriteRenderer>(); 
-            spriteRenderer.sprite = knight1;
-        } 
+            spriteRenderer.sprite = Knightwalk;
+        }
+
+        if (Input.GetKey("q"))
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = Knight1;
+        }
     }
 }

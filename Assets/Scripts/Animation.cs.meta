@@ -3,7 +3,9 @@ guid: c33f767c1548d674c875b233a3bc9957
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Knight1: {fileID: 21300000, guid: 1f1930498fd6e614b91718d8e98d0bce, type: 3}
+  - Knightwalk: {fileID: 21300000, guid: 279347e9466a20e4eb28c6b0d4e3af78, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
