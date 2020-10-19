@@ -7,6 +7,8 @@ public class Animation : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite Knight1;
     public Sprite Knightwalk;
+    public Sprite Knightjump;
+    public Sprite Knightwalk2;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,16 +18,25 @@ public class Animation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = Knight1;
+
+        if (Input.GetKey("d"))
         {
             spriteRenderer = GetComponent<SpriteRenderer>(); 
             spriteRenderer.sprite = Knightwalk;
         }
 
-        if (Input.GetKey("q"))
+        if (Input.GetKey("a"))
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>(); 
+            spriteRenderer.sprite = Knightwalk2;
+        }
+
+        if(Input.GetKey("space"))
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = Knight1;
+            spriteRenderer.sprite = Knightjump;
         }
     }
 }
